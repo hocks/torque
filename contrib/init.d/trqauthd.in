@@ -39,6 +39,7 @@ case "$1" in
 		killproc trqauthd
 		RET=$?
 		rm -f /var/lock/subsys/trqauthd
+		rm /tmp/trqauthd-unix
 		echo
 		;;
 	status)
